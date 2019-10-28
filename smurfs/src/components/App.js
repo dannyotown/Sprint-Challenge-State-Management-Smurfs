@@ -21,9 +21,10 @@ function App(props) {
     props.postAPI(form)
     setForm()
   }
+  const {fetchAPI} = props;
   useEffect(() => {
-    props.fetchAPI();
-  }, [])
+    fetchAPI();
+  }, [fetchAPI])
     return (
       <>
       <div className="App">
